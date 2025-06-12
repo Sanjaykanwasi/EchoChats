@@ -1,14 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import {
-  MessageCircle,
-  Video,
-  Phone,
-  Shield,
-  Zap,
-  Users,
-  Star,
-} from "lucide-react";
+import { MessageCircle, Users, Globe, Shield, Zap, Star } from "lucide-react";
+import Link from "next/link";
 
 export default function EchoChatsLanding() {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,16 +18,16 @@ export default function EchoChatsLanding() {
         "Lightning-fast messages with read receipts, typing indicators, and emoji reactions.",
     },
     {
-      icon: <Video className="w-8 h-8" />,
-      title: "HD Video Calls",
+      icon: <Users className="w-8 h-8 text-green-400" />,
+      title: "Topic-based Communities",
       description:
-        "Crystal clear video calls with screen sharing and virtual backgrounds.",
+        "Join specialized chat rooms focused on your interests, from tech and gaming to arts and lifestyle.",
     },
     {
-      icon: <Phone className="w-8 h-8" />,
-      title: "Voice Calls",
+      icon: <Globe className="w-8 h-8 text-purple-400" />,
+      title: "Global Connections",
       description:
-        "High-quality voice calls with noise cancellation and call recording.",
+        "Connect with like-minded individuals from different cultures and backgrounds worldwide.",
     },
     {
       icon: <Shield className="w-8 h-8" />,
@@ -119,13 +112,15 @@ export default function EchoChatsLanding() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button className="group bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-purple-500/25">
                 <span className="flex items-center space-x-2">
-                  <span>Start Chatting</span>
+                  <Link href={"/forums"}>
+                    <span>Start Chatting</span>
+                  </Link>
                   <MessageCircle className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
                 </span>
               </button>
-              <button className="border border-gray-600 hover:border-gray-400 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-gray-800/50">
+              {/* <button className="border border-gray-600 hover:border-gray-400 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-gray-800/50">
                 Watch Demo
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -258,9 +253,11 @@ export default function EchoChatsLanding() {
             Join millions of users who trust EchoChats for their daily
             communication needs.
           </p>
-          <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-10 py-4 rounded-full text-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-purple-500/25">
-            Get Started Free
-          </button>
+          <Link href={"/forums"}>
+            <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-10 py-4 rounded-full text-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-purple-500/25">
+              Get Started Free
+            </button>
+          </Link>
         </div>
       </section>
 

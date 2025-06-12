@@ -43,7 +43,6 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Forums", href: "/forums" },
-    { name: "UserChats", href: "/chat" },
     { name: "Contact", href: "/contact" },
   ];
 
