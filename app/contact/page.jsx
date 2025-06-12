@@ -26,8 +26,8 @@ export default function Contact() {
 
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
             Have a question about Echo Chats? Want to collaborate on a project?
-            Or just want to say hello? I'd love to hear from you. Drop me a
-            message and I'll get back to you as soon as possible.
+            Or just want to say hello? I would love to hear from you. Drop me a
+            message and I wll get back to you as soon as possible.
           </p>
         </div>
       </section>
@@ -95,7 +95,7 @@ export default function Contact() {
                         name="subject"
                         required
                         className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
-                        placeholder="What's this about?"
+                        placeholder="What is this about?"
                       />
                     </div>
 
@@ -132,10 +132,10 @@ export default function Contact() {
             <div className="space-y-8">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
-                  Let's Connect
+                  Lets Connect
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  I'm always excited to discuss new ideas, collaborate on
+                  I am always excited to discuss new ideas, collaborate on
                   projects, or help with any questions you might have about Echo
                   Link. Choose your preferred way to reach out!
                 </p>
@@ -239,7 +239,7 @@ export default function Contact() {
                 Do you offer custom development services?
               </h3>
               <p className="text-muted-foreground">
-                Yes! I'm available for freelance projects and consulting. Let's
+                Yes! I am available for freelance projects and consulting. Lets
                 discuss your requirements and see how I can help.
               </p>
             </div>

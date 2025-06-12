@@ -210,7 +210,7 @@ export default function EchoChatsLanding() {
               What Our Users Say
             </h2>
             <p className="text-xl text-gray-400">
-              Join thousands of satisfied users who've transformed their
+              Join thousands of satisfied users who have transformed their
               communication experience.
             </p>
           </div>
@@ -229,9 +229,7 @@ export default function EchoChatsLanding() {
                     />
                   ))}
                 </div>
-                <p className="text-gray-300 mb-6 italic">
-                  "{testimonial.text}"
-                </p>
+                <p className="text-gray-300 mb-6 italic">{testimonial.text}</p>
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center font-bold">
                     {testimonial.avatar}
