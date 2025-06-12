@@ -69,7 +69,7 @@ export default function EchoChatsLanding() {
       role: "Developer",
       avatar: "MC",
       rating: 5,
-      text: "The best chat app I've ever used. Lightning fast, secure, and the video quality is outstanding.",
+      text: "The best chat app I have ever used. Lightning fast, secure, and the video quality is outstanding.",
     },
     {
       name: "Emily Davis",
@@ -253,7 +253,6 @@ export default function EchoChatsLanding() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
             Ready to Transform Your
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              {" "}
               Communication?
             </span>
           </h2>
