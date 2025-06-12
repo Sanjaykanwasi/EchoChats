@@ -11,10 +11,10 @@ import {
 } from "@clerk/nextjs";
 import LoadingBar from "react-top-loading-bar";
 import { usePathname } from "next/navigation";
-import { useUser } from "@clerk/nextjs";
+// import { useUser } from "@clerk/nextjs";
 
 export default function Navbar() {
-  const user = useUser();
+  // const user = useUser();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [progress, setProgress] = useState(0);
