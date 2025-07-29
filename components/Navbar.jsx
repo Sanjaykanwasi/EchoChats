@@ -77,7 +77,7 @@ export default function Navbar() {
                     isScrolled ? "text-white" : "text-white"
                   }`}
                 >
-                  EchoBlogs
+                  EchoChats
                 </span>
               </Link>
             </div>
